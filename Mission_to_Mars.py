@@ -80,10 +80,10 @@ for item in find_images:
     find_ = temp_soup.find('div',class_ = "downloads")
     item_object["img_url"] = f"https://marshemispheres.com/{find_.find('a').get('href')}"
     browser.back()
-    print(item_object)
     hemisphere_image_urls.append(item_object)
 # 5. Quit the browser
 browser.quit()
+print(hemisphere_image_urls)
 
 
 
